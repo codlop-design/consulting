@@ -1964,7 +1964,7 @@ aside {
 .contacts li h5 i {
     font-size: 26px;
     display: flex;
-    color: #A51C30;
+    color: var(--primary-color);
 }
 
 .contact-form .contacts li a {
