@@ -519,7 +519,6 @@ h1 .pre-title {
 .pre-title {
     font-size: 18px;
     text-transform: uppercase;
-    color: var(--secondary-color);
 }
 
 h2 {
@@ -1469,7 +1468,6 @@ aside {
 
 .process .items {
     position: relative;
-    cursor: crosshair;
 }
 
 .process .items:before {
