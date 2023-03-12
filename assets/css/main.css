@@ -1986,6 +1986,8 @@ aside {
     margin-top: 30px;
     display: block;
     border: 1px solid;
+    padding: 5px 10px;
+    font-size: 16px;
 }
 
 .form .message {
@@ -2168,6 +2170,7 @@ header .navbar-expand.relative {
 
 header .navbar-expand .navbar-nav {
     display: inline-block;
+    padding: 0;
 }
 
 header .navbar-expand .navbar-nav.toggle {
@@ -2196,7 +2199,8 @@ header .navbar-expand .navbar-brand i {
 }
 
 header .navbar-expand .navbar-brand img {
-    height: 60px;
+    max-height: 60px;
+    max-width: 210px;
 }
 
 header .navbar-expand .navbar-brand .brand {
