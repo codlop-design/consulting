@@ -1468,6 +1468,7 @@ aside {
 
 .process .items {
     position: relative;
+    display: flex;
 }
 
 .process .items:before {
@@ -3268,9 +3269,7 @@ header .navbar-expand .navbar-brand .featured .first {
 }
 
 .card:not(.no-hover):hover:before,
-.card:not(.no-hover):hover:after {
-    opacity: 0;
-}
+.card:not(.no-hover):hover:after {}
 
 .card:hover .image-person img {
     transform: scale(1.1);
@@ -4586,13 +4585,14 @@ footer .copyright p {
     font-weight: normal;
 }
 
+.about-sec {
+    padding-bottom: 0;
+}
+
 .about-sec img {
-
-max-height: 615px;
-
-display: block;
-
-margin: 0 auto;
+    max-height: 615px;
+    display: block;
+    margin: 0 auto;
 }
 
 .about-sec .item h4 {
@@ -4605,12 +4605,45 @@ margin: 0 auto;
     gap: 6px;
 }
 
+.about-sec .item .desc ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    margin-top: 15px;
+    list-style: none;
+    padding: 0;
+}
+
+.about-sec .item .desc ul li {
+    margin: 0;
+    padding: 10px;
+    background: #d5e8e86e;
+    border-radius: 5px;
+}
+
+.about-sec .item .desc ul li p {
+    line-height: 24px;
+}
+
+.about-sec .item .desc ul li p:first-child {
+    color: #212529;
+    font-size: 17px;
+    position: relative;
+    padding-right: 10px;
+}
+
+.about-sec .item .desc ul li p:first-child::before {
+    content: '-';
+    position: absolute;
+    right: 0;
+}
+
 .about-sec .intro {
     margin-bottom: 35px;
 }
 
 .about-sec .item p {
-    margin-top: 0;
+    margin: 0;
     font-size: 16px;
     line-height: 28px;
 }
@@ -4627,6 +4660,52 @@ margin: 0 auto;
     gap: 15px;
 }
 
+.grid-box .card::after {
+    content: '';
+    position: absolute;
+    width: 90%;
+    left: 0;
+    right: 0;
+    top: -20px;
+    bottom: -20px;
+    background: #ffffffa1;
+    margin: 0 auto;
+    border-radius: 10px;
+    z-index: -1;
+}
+
+.grid-box .card:nth-child(2) {
+    position: relative;
+    bottom: -20px;
+}
+
+.grid-box .card img {
+    height: 60px;
+    margin-bottom: 25px;
+}
+
+.grid-box .card h3 {
+    margin: 0;
+    font-weight: normal;
+    font-size: 23px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.grid-box .card .list-desc p {
+    margin: 0;
+    margin-bottom: 10px;
+    position: relative;
+    text-align: center;
+    padding-bottom: 10px;
+    box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -12px;
+}
+
+.grid-box .card .list-desc p:last-child {
+    box-shadow: unset;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
 
 .services-sec .card i {
     font-size: 44px;
@@ -4643,13 +4722,11 @@ margin: 0 auto;
     gap: 10px;
 }
 
-.services-sec .card p {
-    margin: 0;
-}
 
+.services-sec .intro,
 .process .intro {
     text-align: center;
-    width: 70%;
+    width: 75%;
     margin: 0 auto;
     margin-bottom: 50px;
 }
@@ -4668,6 +4745,9 @@ margin: 0 auto;
 
 .process .items .item {
     margin-bottom: 0;
+    padding: 0 15px;
+    width: 100%;
+    text-align: center;
 }
 
 .contact-us {
@@ -4749,3 +4829,14 @@ margin: 0 auto;
     min-height: calc(100vh - 115px);
     padding-top: 120px;
 }
+
+.clients-sec .clients-slide img {
+    height: 150px;
+    display: block;
+    margin: 0 auto;
+    object-fit: contain;
+}
+
+.clients-sec .swiper-wrapper {
+    transition-timing-function: linear;
+  }

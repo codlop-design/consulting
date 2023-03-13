@@ -139,3 +139,19 @@ jQuery(function ($) {
     }
 })
 
+var swiper = new Swiper(".clients-slide", {
+    slidesPerView: 3,
+    loop: true,
+    speed: 5000,
+    autoplay: {
+      enabled: true,
+      delay: 1,
+    }
+});
+
+$(".clients-slide").hover(function () {
+    (this).swiper.autoplay.stop();
+}, function () {
+    (this).swiper.autoplay.start();
+});
+
