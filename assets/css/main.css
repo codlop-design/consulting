@@ -2912,10 +2912,16 @@ header .navbar-expand .navbar-brand .featured .first {
     align-items: center;
 }
 
+section.hero .container {
+    position: sticky;
+    top: 60px;
+}
+
 .slide-content {
     position: relative;
     z-index: 1;
     width: 50%;
+    padding-bottom: 50px;
 }
 
 .swiper-slide .aos-animate {
