@@ -4840,3 +4840,7 @@ footer .copyright p {
 .clients-sec .swiper-wrapper {
     transition-timing-function: linear;
   }
+
+  .language-btn {
+    margin-right: 15px;
+  }
