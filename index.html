@@ -53,22 +53,25 @@
                         <a href="index.html" class="smooth-anchor nav-link">الرئيسية</a>
                     </li>
                     <li class="nav-item">
-                        <a href="index.html#about" class="smooth-anchor nav-link">من نحن</a>
+                        <a href="index.html#about" class="smooth-anchor nav-link">نبذة تعريفية</a>
                     </li>
                     <li class="nav-item">
                         <a href="index.html#clients" class="smooth-anchor nav-link">عملائنا</a>
                     </li>
                     <li class="nav-item">
-                        <a href="index.html#services" class="smooth-anchor nav-link">الاستشارات</a>
+                        <a href="index.html#services" class="smooth-anchor nav-link">خدماتنا الاستشارية</a>
                     </li>
                     <li class="nav-item">
                         <a href="privacy.html" class="smooth-anchor nav-link">الشروط والاحكام</a>
+                    </li>
+                    <li class="nav-item contact-li">
+                        <a href="index.html#contact" class="smooth-anchor nav-link">تواصل معنا</a>
                     </li>
                 </ul>
 
                 <ul class="navbar-nav toggle">
                     <li class="nav-item">
-                        <a href="#" class="nav-link">
+                        <a href="#" class="nav-link" data-toggle="modal" data-target="#menu">
                             <i class="bi bi-list"></i>
                         </a>
                     </li>
@@ -321,17 +324,17 @@
                     </ul>
                 </div>
                 <form action="" class="row">
-                    <div class="col-12 col-md-6 input-group">
+                    <div class="col-12 col-lg-6 input-group">
                         <input type="text" name="name" class="form-control field-name" placeholder="الاسم">
                     </div>
-                    <div class="col-12 col-md-6 input-group">
+                    <div class="col-12 col-lg-6 input-group">
                         <input type="email" name="email" class="form-control field-email"
                             placeholder="البريد الالكتروني">
                     </div>
-                    <div class="col-12 col-md-6 input-group">
+                    <div class="col-12 col-lg-6 input-group">
                         <input type="text" name="phone" class="form-control field-phone" placeholder="رقم الجوال">
                     </div>
-                    <div class="col-12 col-md-6 input-group">
+                    <div class="col-12 col-lg-6 input-group">
                         <i class="bi bi-caret-down"></i>
                         <select name="info" class="form-control">
                             <option value="" selected="" disabled="">اختر نوع الاستشارة</option>
@@ -361,7 +364,22 @@
         </div>
     </footer>
 
-
+    <!-- Modal [responsive menu] -->
+    <div id="menu" class="p-0 modal fade" role="dialog" aria-labelledby="menu" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-slideout" role="document">
+            <div class="modal-content full">
+                <div class="modal-header" data-dismiss="modal">
+                    <i class="icon-close bi bi-arrow-right"></i>
+                </div>
+                <div class="menu modal-body">
+                    <div class="row w-100">
+                        <div class="items p-0 col-12 text-center">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <div id="map" class="p-0 modal fade" role="dialog" aria-labelledby="map" aria-hidden="true">
         <div class="modal-dialog modal-dialog-slideout" role="document">
@@ -385,7 +403,6 @@
             <i class="bi bi-arrow-up"></i>
         </a>
     </div>
-
 
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
