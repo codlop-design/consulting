@@ -2161,7 +2161,7 @@ header .navbar-sticky.sub {
     -ms-transform: translate3d(0, -101%, 0) !important;
     -moz-transform: translate3d(0, -101%, 0) !important;
     transform: translate3d(0, -101%, 0) !important;
-    /* ! important is necessary to avoid conflict with the AOS animate. */
+    z-index: 5;
 }
 
 header .navbar-expand {
@@ -5159,16 +5159,6 @@ footer .copyright p {
         display: none;
     }
 
-    header .navbar-expand {
-        position: absolute;
-    }
-
-    header .navbar-sticky.sub.visible {
-        transform: unset !important;
-        background: unset;
-        box-shadow: unset;
-        top: 40px;
-    }
 
     .intro h2 {
         font-size: 20px;
@@ -5272,6 +5262,10 @@ footer .copyright p {
 
     .modal.fade.show .modal-dialog.modal-dialog-slideout {
         width: 300px;
+    }
+
+    #map.modal.fade.show .modal-dialog.modal-dialog-slideout {
+        width: 85%;
     }
 
     .menu .nav-link:first-child {
@@ -5460,5 +5454,9 @@ footer .copyright p {
 
     .page-sec .intro {
         margin-bottom: 20px;
+    }
+
+    .contact-form form .input-group i {
+        left: 10px;
     }
 }
