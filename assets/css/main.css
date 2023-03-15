@@ -264,6 +264,7 @@ html {
     overflow-x: hidden;
     -webkit-overflow-scrolling: touch;
     -webkit-text-size-adjust: 100%;
+    scroll-behavior: smooth;
 }
 
 @font-face {
